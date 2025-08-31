@@ -46,7 +46,8 @@ export function registerSmudgeContainer(blockRegistry){
             'cc:smudge_remaining': BURN_TOTAL_BUCKETS,
             'cc:smudge_stage': 1
           });
-          if (item.amount > 0){ item.amount -= 1; heldSlot.setItem(item.amount?item:undefined); }
+          let amt = item.amount - 1;
+          if (item.amount > 0){heldSlot.setItem((amt>=1)?item:undefined); }
           return;
         }
 

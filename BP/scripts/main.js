@@ -1,4 +1,4 @@
-import { system, world } from "@minecraft/server";
+import { system, world, ItemStack } from "@minecraft/server";
 import { registerBlockSpreader } from "./components/block_spreader.js";
 import { registerBlockGrower } from "./components/block_grower.js";
 import { registerSideAttachment } from "./components/side_attachment.js";
@@ -42,7 +42,7 @@ world.afterEvents.playerInteractWithBlock.subscribe(e => {
       let amount = Math.floor(Math.random()*3)+1;
       const enchant = e.beforeItemStack.getComponent("minecraft:enchantable").getEnchantment("minecraft:looting")?.level;
       if (enchant) amount += enchant;
-      world.getDimension(e.player.dimension.id).spawnItem(new Item("cc:"+typeString+"_bark", amount), e.block.location);
+      world.getDimension(e.player.dimension.id).spawnItem(new ItemStack("cc:"+typeString+"_bark", amount), e.block.location);
     }
   }
 });
