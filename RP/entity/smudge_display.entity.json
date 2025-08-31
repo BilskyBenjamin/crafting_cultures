@@ -1,0 +1,12 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cc:smudge_display",
+      "materials": { "default": "entity_alphatest" },
+  "textures": { "default": "textures/blocks/transparent" },
+  "geometry": { "default": "geometry.smudge_display", "smudge_display": "geometry.smudge_display" },
+  "render_controllers": [ "controller.render.smudge_display" ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:scatter_feature": {
+    "description": { "identifier": "cc:cedar_tree_scatter.feature" },
+    "places_feature": "cc:cedar_tree.feature",
+    "distribution": {
+      "iterations": 1,
+      "scatter_chance": "(query.block_name(variable.worldx, query.heightmap(variable.worldx, variable.worldz) - 1, variable.worldz) == 'minecraft:grass_block' || query.block_name(variable.worldx, query.heightmap(variable.worldx, variable.worldz) - 1, variable.worldz) == 'minecraft:dirt' || query.block_name(variable.worldx, query.heightmap(variable.worldx, variable.worldz) - 1, variable.worldz) == 'minecraft:podzol') ? 1 : 0",
+      "x": 0,
+      "z": 0,
+      "y": "query.heightmap(variable.worldx, variable.worldz)"
+    },
+    "project_input_to_floor": true
+  }
+}

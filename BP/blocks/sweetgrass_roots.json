@@ -1,0 +1,63 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cc:sweetgrass_roots",
+			"menu_category": {
+				"category": "nature",
+				"group": "minecraft:itemGroup.name.decoration"
+			}
+		},
+        "components": {
+            "cc:block_spreader": {},
+            "cc:block_grower": {
+                "block_to_place": "cc:sweetgrass"
+            },
+            "minecraft:material_instances": {
+                "grass": {
+                    "texture": "cc_sweetgrass_roots_top",
+                    "render_method": "alpha_test",
+                    "tint_method": "grass"
+                },
+                "grass_overlay": {
+                    "texture": "cc_sweetgrass_roots_grass_overlay",
+                    "render_method": "alpha_test",
+                    "tint_method": "grass"
+                },
+                "side": {
+                    "texture": "cc_sweetgrass_roots_side",
+                    "render_method": "alpha_test"
+                },
+                "transparent": {
+                    "texture": "cc_transparent",
+                    "render_method": "alpha_test"
+                },
+                "*": {
+                    "texture": "cc_sweetgrass_roots_bottom",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.5
+            },
+            "minecraft:collision_box": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    15,
+                    16
+                ]
+            },
+            "minecraft:tick": {
+                "interval_range": [50, 150],
+                "looping": true
+            },
+            "minecraft:geometry": "geometry.sweetgrass_roots"
+		}
+        
+    }
+}

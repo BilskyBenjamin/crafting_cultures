@@ -1,0 +1,12 @@
+{
+    "format_version": "1.21.90",
+    "minecraft:sequence_feature": {
+        "description": {
+            "identifier": "cc:chaga_mushroom.feature"
+        },
+        "features": [
+            "cc:chaga_probe.feature",
+            "cc:chaga_structure.feature"
+        ]
+    }
+}

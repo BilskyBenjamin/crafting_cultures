@@ -1,0 +1,59 @@
+{
+    "format_version": "1.21.90",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cc:smudge_display",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "geometry": {
+                "default": "geometry.smudge_display"
+            }
+        },
+        "components": {
+            "minecraft:type_family": { "family": ["smudge_display"] },
+            "minecraft:collision_box": { "width": 5.01, "height": 5.01 },
+            "minecraft:push_through": { "value": 1.0 },
+            "minecraft:physics": { "has_collision": false, "has_gravity": false },
+            "minecraft:breathable": {
+                "breathes_air": true,
+                "breathes_water": true,
+                "breathes_lava": true,
+                "breathes_solids": true
+            },
+            "minecraft:knockback_resistance": { "value": 1 },
+            "minecraft:is_hidden_when_invisible": {},
+            "minecraft:inventory": {
+                "additional_slots_per_strength": 0,
+                "can_be_siphoned_from": true,
+                "container_type": "inventory",
+                "inventory_size": 27,
+                "private": false,
+                "restrict_to_owner": false
+            },
+            "minecraft:equippable": {
+                "slots": [
+                    {
+                        "slot": 0,
+                        "item": "cc:sweetgrass_braid",
+                        "accepted_items": ["cc:sweetgrass_braid", "cc:chaga", "cc:birch_bark", "cc:deerfoot", "cc:dried_sage_leaf", "cc:dried_tobacco_leaf", "cc:cedar_leaves"]
+                    }
+                ]
+            },
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"pivot": [0, 100, 0],
+						"width": 0,
+						"height": 0
+					}
+				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"deals_damage": "no"
+				}
+			}
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:recipe_shapeless": {
+    "description": { "identifier": "cc:abalone_shell_to_smudge_bowl" },
+    "tags": [ "crafting_table" ],
+    "ingredients": [ { "item": "cc:abalone_shell" } ],
+    "result": { "item": "cc:smudge_bowl", "count": 1 },
+    "unlock": [ { "item": "cc:abalone_shell" } ]
+  }
+}

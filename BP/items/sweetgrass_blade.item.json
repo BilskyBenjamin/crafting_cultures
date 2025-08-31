@@ -1,0 +1,27 @@
+{
+    "format_version": "1.21.90",
+    "minecraft:item": {
+        "description": {
+            "identifier": "cc:sweetgrass_blade",
+            "menu_category": {
+                "category": "nature",
+                "group": "minecraft:itemGroup.name.crop"
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "minecraft:icon": "cc_sweetgrass_blade",
+            "minecraft:use_animation": "eat",
+            "minecraft:use_modifiers": {
+                "use_duration": 1.5,
+                "movement_modifier": 0.2
+            },
+            "cc:braidable": {
+                "required_offhand": "cc:sweetgrass_bundle",
+                "required_amount": 3,
+                "result_item": "cc:incomplete_sweetgrass_braid_0",
+                "result_damage": 3
+            }
+        }
+    }
+}

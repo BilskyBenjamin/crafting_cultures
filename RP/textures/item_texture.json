@@ -1,0 +1,72 @@
+{
+	"resource_pack_name": "Crafting Cultures",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"cc_sweetgrass_blade": {
+			"textures": "textures/items/sweetgrass_blade"
+		},
+		"cc_sweetgrass_bundle": {
+			"textures": "textures/items/sweetgrass_bundle"
+		},
+		"cc_sweetgrass_braid": {
+			"textures": "textures/items/sweetgrass_braid"
+		},
+		"cc_incomplete_sweetgrass_braid_0": {
+			"textures": "textures/items/incomplete_sweetgrass_braid_0"
+		},
+		"cc_incomplete_sweetgrass_braid_1": {
+			"textures": "textures/items/incomplete_sweetgrass_braid_1"
+		},
+		"cc_incomplete_sweetgrass_braid_2": {
+			"textures": "textures/items/incomplete_sweetgrass_braid_2"
+		},
+		"cc_oak_bark": {
+			"textures": "textures/items/oak_bark"
+		},
+		"cc_birch_bark": {
+			"textures": "textures/items/birch_bark"
+		},
+		"cc_acacia_bark": {
+			"textures": "textures/items/acacia_bark"
+		},
+		"cc_dark_bark": {
+			"textures": "textures/items/dark_bark"
+		},
+		"cc_jungle_bark": {
+			"textures": "textures/items/jungle_bark"
+		},
+		"cc_spruce_bark": {
+			"textures": "textures/items/spruce_bark"
+		},
+		"cc_mangrove_bark": {
+			"textures": "textures/items/mangrove_bark"
+		},
+		"cc_cherry_bark": {
+			"textures": "textures/items/cherry_bark"
+		},
+		"cc_pale_bark": {
+			"textures": "textures/items/pale_bark"
+		},
+		"cc_crimson_bark": {
+			"textures": "textures/items/crimson_bark"
+		},
+		"cc_warped_bark": {
+			"textures": "textures/items/warped_bark"
+		},
+		"cc_sage_leaf": {
+			"textures": "textures/items/sage_leaf"
+		},
+		"cc_dried_sage_leaf": {
+			"textures": "textures/items/dried_sage_leaf"
+		},
+		"cc_tobacco_leaf": {
+			"textures": "textures/items/tobacco_leaf"
+		},
+		"cc_dried_tobacco_leaf": {
+			"textures": "textures/items/dried_tobacco_leaf"
+		},
+		"cc_cedar_sapling": {
+			"textures": "textures/items/cedar_sapling"
+		}
+	}
+}

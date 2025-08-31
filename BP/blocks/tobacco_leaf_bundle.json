@@ -1,0 +1,48 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cc:tobacco_leaf_bundle",
+      "menu_category": { "category": "nature" },
+      "states": { "cc:dry_stage": [0, 1] }
+    },
+    "permutations": [
+        {
+          "condition": "q.block_state('cc:dry_stage') == 1",
+          "components": {
+            "minecraft:material_instances": {
+              "*": { "texture": "cc_tobacco_leaf_bundle", "tint_method": "dry_foliage", "render_method": "alpha_test" },
+              "transparent": {"render_method": "alpha_test", "texture": "cc_transparent", "ambient_occlusion": false }
+            },
+            "minecraft:loot": "loot_tables/dried_tobacco_leaf_bundle.json"
+          }
+        }
+    ],
+    "components": {
+      "cc:dryable": { "drop_item": "cc:dried_tobacco_leaf", "drop_amount": 3 },
+      "minecraft:tick": {
+        "interval_range": [5, 5],
+        "looping": true
+      },
+      "minecraft:geometry": "geometry.tobacco_leaf_bundle",
+      "minecraft:material_instances": {
+        "*": { "render_method": "alpha_test", "texture": "cc_tobacco_leaf_bundle", "ambient_occlusion": false },
+        "transparent": {"render_method": "alpha_test", "texture": "cc_transparent", "ambient_occlusion": false }
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": ["down"]
+          }
+        ]
+      },
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": { "origin": [-4.9, 6.8, -5.3], "size": [9.4, 9, 8.6] },
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 0 },
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 0 },
+      "minecraft:loot": "loot_tables/tobacco_leaf_bundle.json",
+      
+      "minecraft:map_color": "#8b5a2b"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:single_block_feature": {
+    "description": { "identifier": "cc:sage_single.feature" },
+    "places_block": "cc:sage",
+    "enforce_placement_rules": true,
+    "enforce_survivability_rules": true,
+    "may_replace": [
+      "minecraft:air","minecraft:grass","minecraft:tall_grass","minecraft:fern","minecraft:large_fern","minecraft:snow_layer","minecraft:moss_carpet", "minecraft:pink_petals", "minecraft:leaf_litter"
+    ]
+  }
+}

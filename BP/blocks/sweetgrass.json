@@ -1,0 +1,65 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cc:sweetgrass",
+			"menu_category": {
+				"category": "nature",
+				"group": "minecraft:itemGroup.name.seed"
+			}
+		},
+		
+		"components": {
+            "cc:block_grower": {
+                "block_to_place": "cc:sweetgrass_flower"
+            },
+            "minecraft:tick": {
+                "interval_range": [50, 150],
+                "looping": true
+            },
+			"minecraft:material_instances": {
+				"*": {
+					"render_method": "alpha_test",
+					"tint_method": "grass",
+					"texture": "cc_sweetgrass"
+				}
+			},
+			"minecraft:loot": "loot_tables/sweetgrass.json",
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"liquid_type": "water",
+						"on_liquid_touches": "popped"
+					}
+				]
+			},
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": {
+				"origin": [-4, 0, -4],
+				"size": [8, 12, 8]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						],
+						"block_filter": [
+							"cc:sweetgrass_roots"
+						]
+					}
+				]
+			},
+			"minecraft:friction": 0.5,
+			"minecraft:geometry": "geometry.sweetgrass",
+			"minecraft:light_emission": 1,
+			"minecraft:map_color": "#32a852"
+		}
+	}
+}

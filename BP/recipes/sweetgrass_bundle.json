@@ -1,0 +1,26 @@
+{
+    "format_version": "1.21.90",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "cc:sweetgrass_bundle_recipe"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "cc:sweetgrass_blade",
+                "count": 7
+            }
+        ],
+        "result": {
+            "item": "cc:sweetgrass_bundle",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "cc:sweetgrass_blade"
+            }
+        ]
+    }
+}

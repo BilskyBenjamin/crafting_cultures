@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cc:abalone_shell",
+      "menu_category": { "category": "nature" }
+    },
+    "components": {
+  "minecraft:geometry": "geometry.abalone_shell",
+      "minecraft:material_instances": {
+        "*": { "texture": "cc_abalone_shell", "render_method": "alpha_test" }
+      },
+      "minecraft:selection_box": { "origin": [ -5, 0, -2 ], "size": [ 9.2, 3.1, 6 ] },
+      "minecraft:collision_box": { "origin": [ -5, 0, -2 ], "size": [ 9.2, 3.1, 6 ] }
+    }
+  }
+}

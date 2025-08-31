@@ -1,0 +1,21 @@
+{
+    "format_version": "1.21.90",
+    "minecraft:item": {
+        "description": {
+            "identifier": "cc:cedar_sapling",
+            "menu_category": {
+                "category": "nature",
+                "group": "minecraft:itemGroup.name.nature"
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "cc:smudgeable": {
+                "effect": "cleanse",
+                "duration": 1,
+                "amount": 1
+            },
+            "minecraft:icon": "cc_cedar_sapling"
+        }
+    }
+}

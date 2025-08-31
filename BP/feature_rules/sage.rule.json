@@ -1,0 +1,34 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "cc:sage.rule",
+      "places_feature": "cc:sage_single.feature"
+    },
+    "conditions": {
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": {
+        "any_of": [
+          {"test":"has_biome_tag","operator":"==","value":"plains"},
+          {"test":"has_biome_tag","operator":"==","value":"sunflower_plains"},
+          {"test":"has_biome_tag","operator":"==","value":"meadow"},
+          {"test":"has_biome_tag","operator":"==","value":"cherry_grove"},
+          {"test":"has_biome_tag","operator":"==","value":"savanna"},
+          {"test":"has_biome_tag","operator":"==","value":"savanna_plateau"},
+          {"test":"has_biome_tag","operator":"==","value":"windswept_savanna"},
+          {"test":"has_biome_tag","operator":"==","value":"old_growth_pine_taiga"},
+          {"test":"has_biome_tag","operator":"==","value":"old_growth_spruce_taiga"},
+          {"test":"has_biome_tag","operator":"==","value":"flower_forest"},
+          {"test":"has_biome_tag","operator":"==","value":"grove"}
+        ]
+      }
+    },
+    "distribution": {
+      "scatter_chance": 10.0,
+      "iterations": 15,
+      "x": {"distribution":"uniform","extent":[-16,16]},
+      "z": {"distribution":"uniform","extent":[-16,16]},
+      "y": "query.heightmap(variable.worldx, variable.worldz)"
+    }
+  }
+}

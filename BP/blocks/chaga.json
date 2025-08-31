@@ -1,0 +1,126 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cc:chaga",
+			"menu_category": {
+				"category": "nature",
+				"group": "minecraft:itemGroup.name.mushroom"
+			},
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": ["minecraft:block_face"]
+				}
+			}
+		},
+		
+		
+
+		"permutations": [
+            {
+                "condition": "q.block_state('minecraft:block_face') == 'north'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [0, 0, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:block_face') == 'west'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [0, 90, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:block_face') == 'south'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [0, 180, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:block_face') == 'east'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [0, 270, 0]
+                    }
+                }
+            }
+        ],
+
+		"components": {
+			"cc:bonemeal_dropper": {
+				"drop_chance": 0.2,
+				"drop_item": "cc:chaga",
+				"drop_amount": 1
+			},
+			"cc:side_attachment": {
+				"support_blocks": ["minecraft:birch_log","minecraft:birch_wood"],
+				"tick_interval": 5
+			},
+			"minecraft:tick": {
+                "interval_range": [5, 5],
+                "looping": true
+            },
+			"minecraft:material_instances": {
+				"top": {
+					"render_method": "alpha_test",
+					"tint_method": "dry_foliage",
+					"texture": "cc_chaga_top"
+				},
+				"middle": {
+					"render_method": "alpha_test",
+					"tint_method": "dry_foliage",
+					"texture": "cc_chaga_middle"
+				},
+				"bottom": {
+					"render_method": "alpha_test",
+					"tint_method": "dry_foliage",
+					"texture": "cc_chaga_bottom"
+				},
+				"*": {
+					"render_method": "alpha_test",
+					"tint_method": "dry_foliage",
+					"texture": "cc_chaga_top"
+				}
+			},
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"liquid_type": "water",
+						"on_liquid_touches": "popped"
+					}
+				]
+			},
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": {
+				"origin": [-4.8, 4.4, 2],
+                "size": [9.2, 3.4, 6]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"side"
+						],
+						"block_filter": [
+							"minecraft:birch_log",
+							"minecraft:birch_wood"
+						]
+					}
+				]
+			},
+			"minecraft:geometry": "geometry.chaga",
+			"minecraft:map_color": "#32a852"
+		}
+	}
+}

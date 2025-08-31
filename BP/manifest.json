@@ -1,0 +1,36 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Crafting Cultures",
+		"description": "Bringing Canadian First Nations culture to Minecraft!",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 21, 90],
+		"uuid": "098f8813-a750-492a-9be8-62cbf20cf0c5"
+	},
+	"modules": [
+		{
+			"type": "data",
+			"version": [1, 0, 0],
+			"uuid": "8261b7e1-e331-4829-89c6-8a0576fd0a53"
+		},
+		{
+			"type": "script",
+			"version": [1, 0, 0],
+			"entry": "scripts/main.js",
+			"uuid": "9084fc6e-68ae-4d01-acc7-5b6166a5800b"
+		}
+	],
+	"metadata": {
+		"authors": ["Ben Bilsky", "Wolastoq Language and Culture Centre"]
+	},
+	"dependencies": [
+		{
+			"uuid": "2a177db6-c36f-4d71-ac0c-1e7707cd866b",
+			"version": [1, 0, 0]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.0.0"
+		}
+	]
+}

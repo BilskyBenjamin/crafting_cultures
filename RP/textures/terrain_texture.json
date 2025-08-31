@@ -1,0 +1,71 @@
+{
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "Crafting Cultures",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"cc_sweetgrass_roots_top": {
+			"textures": "textures/blocks/sweetgrass_roots_top"
+		},
+		"cc_sweetgrass_roots_side": {
+			"textures": "textures/blocks/sweetgrass_roots_side"
+		},
+		"cc_sweetgrass_roots_grass_overlay": {
+			"textures": "textures/blocks/sweetgrass_roots_grass_overlay"
+		},
+		"cc_sweetgrass_roots_bottom": {
+			"textures": "textures/blocks/sweetgrass_roots_bottom"
+		},
+		"cc_sweetgrass": {
+			"textures": "textures/blocks/sweetgrass"
+		},
+		"cc_sweetgrass_flower": {
+			"textures": "textures/blocks/sweetgrass_flower"
+		},
+		"cc_transparent": {
+			"textures": "textures/blocks/transparent"
+		},
+		"cc_chaga_top": {
+			"textures": "textures/blocks/chaga_top"
+		},
+		"cc_chaga_middle": {
+			"textures": "textures/blocks/chaga_middle"
+		},
+		"cc_chaga_bottom": {
+			"textures": "textures/blocks/chaga_bottom"
+		},
+		"cc_deerfoot_top": {
+			"textures": "textures/blocks/deerfoot_top"
+		},
+		"cc_deerfoot_middle": {
+			"textures": "textures/blocks/deerfoot_middle"
+		},
+		"cc_deerfoot_bottom": {
+			"textures": "textures/blocks/deerfoot_bottom"
+		},
+		"cc_sage": {
+			"textures": "textures/blocks/sage"
+		},
+		"cc_tobacco": {
+			"textures": "textures/blocks/tobacco"
+		},
+		"cc_cedar_leaves": {
+			"textures": "textures/blocks/leaves_cedar"
+		},
+		"cc_cedar_log_top": {
+			"textures": "textures/blocks/log_cedar_top"
+		},
+		"cc_cedar_log": {
+			"textures": "textures/blocks/log_cedar"
+		},
+		"cc_tobacco_leaf_bundle": {
+			"textures": "textures/items/tobacco_leaf"
+		},
+		"cc_sage_leaf_bundle": {
+			"textures": "textures/items/sage_leaf"
+		},
+		"cc_abalone_shell": {
+			"textures": "textures/blocks/abalone_shell"
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:weighted_random_feature": {
+    "description": { "identifier": "cc:cedar_tree.feature" },
+    "features": [
+      ["cc:cedar_tree_structure_0.feature", 3],
+      ["cc:cedar_tree_structure_1.feature", 2],
+      ["cc:cedar_tree_structure_2.feature", 1]
+    ]
+  }
+}

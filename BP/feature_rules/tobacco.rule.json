@@ -1,0 +1,34 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "cc:tobacco.rule",
+      "places_feature": "cc:tobacco_single.feature"
+    },
+    "conditions": {
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": {
+        "any_of": [
+          {"test":"has_biome_tag","operator":"==","value":"desert"},
+          {"test":"has_biome_tag","operator":"==","value":"savanna"},
+          {"test":"has_biome_tag","operator":"==","value":"savanna_plateau"},
+          {"test":"has_biome_tag","operator":"==","value":"windswept_savanna"},
+          {"test":"has_biome_tag","operator":"==","value":"badlands"},
+          {"test":"has_biome_tag","operator":"==","value":"eroded_badlands"},
+          {"test":"has_biome_tag","operator":"==","value":"wooded_badlands"},
+          {"test":"has_biome_tag","operator":"==","value":"jungle"},
+          {"test":"has_biome_tag","operator":"==","value":"sparse_jungle"},
+          {"test":"has_biome_tag","operator":"==","value":"bamboo_jungle"},
+          {"test":"has_biome_tag","operator":"==","value":"mangrove_swamp"}
+        ]
+      }
+    },
+    "distribution": {
+      "scatter_chance": 8.0,
+      "iterations": 7,
+      "x": {"distribution":"uniform","extent":[-16,16]},
+      "z": {"distribution":"uniform","extent":[-16,16]},
+      "y": "query.heightmap(variable.worldx, variable.worldz)"
+    }
+  }
+}

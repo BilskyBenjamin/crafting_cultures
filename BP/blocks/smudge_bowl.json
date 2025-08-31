@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cc:smudge_bowl",
+      "menu_category": { "category": "equipment" },
+      "states": {
+        "cc:smudge_stage": [0,1,2],
+        "cc:smudge_effect": ["none","cleanse","calm","speed","regeneration","absorption"],
+        "cc:smudge_remaining": [0,1,2,3,4,5,6,7,8,9,10]
+      }
+     
+    },
+    "components": {
+      "cc:smudge_container": {},
+      "minecraft:tick": {
+          "interval_range": [20, 20],
+          "looping": true
+      },
+      "minecraft:geometry": "geometry.smudge_bowl",
+      "minecraft:material_instances": {
+        "*": { "texture": "cc_abalone_shell", "render_method": "alpha_test", "ambient_occlusion": false }
+      },
+      "minecraft:selection_box": { "origin": [ -5, 0, -4 ], "size": [ 9.2, 3.1, 6 ] },
+      "minecraft:collision_box": { "origin": [ -5, 0, -4 ], "size": [ 9.2, 3.1, 6 ] },
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 0.8 },
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 2 },
+      "minecraft:map_color": "#6b6257"
+    }
+  }
+}

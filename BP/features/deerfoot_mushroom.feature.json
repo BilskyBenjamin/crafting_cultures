@@ -1,0 +1,12 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:sequence_feature": {
+    "description": {
+      "identifier": "cc:deerfoot_mushroom.feature"
+    },
+    "features": [
+      "cc:deerfoot_probe.feature",
+      "cc:deerfoot_structure.feature"
+    ]
+  }
+}

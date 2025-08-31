@@ -1,0 +1,31 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cc:cedar_leaves",
+			"menu_category": {
+				"category": "nature",
+				"group": "minecraft:itemGroup.name.decoration"
+			}
+		},
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "render_method": "alpha_test_single_sided",
+                    "tint_method": "evergreen_foliage",
+                    "texture": "cc_cedar_leaves"
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.5
+            },
+            "minecraft:collision_box": true,
+            "minecraft:loot": "loot_tables/cedar_leaves.json",
+            "minecraft:geometry": {
+                "identifier": "geometry.cedar_leaves",
+                "culling": "cc:leaf_cull"
+            }
+		}
+        
+    }
+}

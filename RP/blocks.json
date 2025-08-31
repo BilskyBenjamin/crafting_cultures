@@ -1,0 +1,40 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"cc:sweetgrass": {
+		"sound": "grass"
+	},
+	"cc:sweetgrass_roots": {
+		"sound": "dirt_with_roots"
+	},
+	"cc:sweetgrass_flower": {
+		"sound": "grass"
+	},
+	"cc:chaga": {
+		"sound": "wood"
+	},
+	"cc:deerfoot": {
+		"sound": "wood"
+	},
+	"cc:sage": {
+		"sound": "grass"
+	},
+	"cc:tobacco": {
+		"sound": "grass"
+	},
+	"cc:cedar_leaves": {
+		"sound": "grass"
+	},
+	"cc:cedar_log": {
+		"sound": "wood"
+	},
+	"cc:sage_leaf_bundle": {
+		"sound": "grass"
+	},
+	"cc:tobacco_leaf_bundle": {
+		"sound": "grass"
+	}
+}

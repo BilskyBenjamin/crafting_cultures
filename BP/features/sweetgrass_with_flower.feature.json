@@ -1,0 +1,28 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:growing_plant_feature": {
+		"description": {
+			"identifier": "cc:sweetgrass_with_flower.feature"
+		},
+		"height_distribution": [
+			[
+				2,
+				1
+			]
+		],
+		"allow_water": false,
+		"growth_direction": "UP",
+		"body_blocks": [
+			[
+				"cc:sweetgrass",
+				1
+			]
+		],
+		"head_blocks": [
+			[
+				"cc:sweetgrass_flower",
+				1
+			]
+		]
+	}
+}

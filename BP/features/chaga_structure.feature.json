@@ -1,0 +1,12 @@
+{
+    "format_version": "1.21.90",
+    "minecraft:structure_template_feature": {
+        "description": {
+            "identifier": "cc:chaga_structure.feature"
+        },
+        "structure_name": "cc:chaga", 
+        "adjustment_radius": 1,
+        "facing_direction": "random",
+        "constraints": {}
+    }
+}
